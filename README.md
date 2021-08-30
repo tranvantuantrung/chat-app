@@ -1,6 +1,6 @@
-# Realtime Chat App
+# Chat App
 
-Realtine Chat App is my pet project, can be used to chat online with friends.
+Chat App is my pet project, can be used to chat online with friends.
 
 ## Description
 
