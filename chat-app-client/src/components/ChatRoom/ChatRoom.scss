@@ -1,0 +1,55 @@
+@import "../../styles/variable.scss";
+
+.chat-room {
+  height: 100%;
+
+  .chat-room__header {
+    height: $sp_header;
+    border-bottom: 1px solid $cl_alto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+
+    .chat-room__back-btn {
+      display: none;
+      margin-right: 4px;
+      padding: 8px 4px 8px 0px;
+
+      svg {
+        transform: rotate(270deg);
+      }
+
+      @media (max-width: 767.98px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .chat-room__name {
+      font-size: 16px;
+      font-weight: 600;
+      margin-left: 12px;
+      flex-grow: 1;
+    }
+
+    .chat-room__info-btn {
+      cursor: pointer;
+    }
+  }
+
+  .chat-room__main {
+    height: calc(100% - #{$sp_header} - #{$sp_footer});
+  }
+
+  .chat-room__footer {
+    height: $sp_footer;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+.ant-avatar-group-popover {
+  display: none !important;
+}

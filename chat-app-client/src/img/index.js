@@ -1,0 +1,9 @@
+export { default as CreateIcon } from "./CreateIcon/CreateIcon";
+export { default as JoinIcon } from "./JoinIcon/JoinIcon";
+export { default as LogoutIcon } from "./LogoutIcon/LogoutIcon";
+export { default as InfoIcon } from "./InfoIcon/InfoIcon";
+export { default as SendIcon } from "./SendIcon/SendIcon";
+export { default as MoreIcon } from "./MoreIcon/MoreIcon";
+export { default as SettingsIcon } from "./SettingsIcon/SettingsIcon";
+export { default as AddPhotoIcon } from "./AddPhotoIcon/AddPhotoIcon";
+export { default as BackIcon } from "./BackIcon/BackIcon";

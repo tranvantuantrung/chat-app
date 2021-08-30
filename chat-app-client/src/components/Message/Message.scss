@@ -1,0 +1,78 @@
+@import "../../styles/variable.scss";
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  &.system {
+    justify-content: center;
+    color: $cl_gray;
+    font-size: 12px;
+  }
+
+  &__content {
+    width: 100%;
+
+    .message__sender-name {
+      color: $cl_gray;
+      padding: 0px 16px;
+    }
+
+    .message__content-wrapper {
+      display: flex;
+      align-items: center;
+
+      .message__date {
+        font-size: 12px;
+        color: $cl_gray;
+      }
+
+      .message__text {
+        color: $cl_mine-shaft;
+        font-size: 14px;
+        min-height: 44px;
+        max-width: 236px;
+        padding: 16px;
+        border-radius: 22px;
+        border: 1px solid $cl_gallery;
+        overflow-wrap: break-word;
+        margin: 0px 8px;
+        line-height: 18px;
+      }
+
+      .message__image {
+        margin: 0px 8px;
+        cursor: pointer;
+
+        .ant-image-mask {
+          display: none;
+        }
+
+        .ant-image {
+          border-radius: 8px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  &.author {
+    .message__content {
+      .message__content-wrapper {
+        justify-content: flex-end;
+
+        .message__text {
+          margin: 0px 0px 0px 8px;
+          background: $cl_gallery;
+        }
+      }
+    }
+  }
+}
+
+.ant-tooltip-inner {
+  font-size: 12px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 5px 1px $cl_alto !important;
+}

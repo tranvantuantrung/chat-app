@@ -1,0 +1,36 @@
+@import "../../styles/variable.scss";
+
+.messages {
+  height: 100%;
+
+  &__box {
+    height: 100%;
+
+    .messages__wrapper {
+      padding: 20px;
+    }
+  }
+
+  .scroll-to-bottom__btn {
+    width: 26px;
+    height: 26px;
+    right: 30px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    transition: all 0.35s ease 0s;
+
+    @media (max-width: 767.98px) {
+      right: 20px;
+    }
+
+    &::after {
+      content: "\AB";
+      font-size: 24px;
+      color: #1890ff;
+      line-height: 10px;
+
+      position: absolute;
+      transform: translate(-7px, -9px);
+    }
+  }
+}

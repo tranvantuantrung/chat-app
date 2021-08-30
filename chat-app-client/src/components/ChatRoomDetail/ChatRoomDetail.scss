@@ -1,0 +1,29 @@
+@import "../../styles/variable.scss";
+
+.chat-room-detail {
+  height: 100%;
+
+  .chat-room-detail__header {
+    height: $sp_header;
+    border-bottom: 1px solid $cl_alto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+
+    .chat-room-detail__title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-left: 12px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .chat-room-detail__info-btn {
+      cursor: pointer;
+    }
+  }
+
+  .chat-room-detail__main {
+    height: calc(100% - #{$sp_header});
+  }
+}

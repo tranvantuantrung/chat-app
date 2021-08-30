@@ -1,0 +1,23 @@
+@import "../../styles/variable.scss";
+
+.chat-room-blank {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 22px;
+    font-weight: 300;
+    color: $cl_mine-shaft;
+    margin: 12px 0px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $cl_gray;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}

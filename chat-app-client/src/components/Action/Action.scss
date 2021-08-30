@@ -1,0 +1,35 @@
+@import "../../styles/variable.scss";
+
+.ant-dropdown-trigger {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 10px;
+}
+
+.menu__item-wrapper {
+  display: flex;
+  align-items: center;
+
+  .menu-item__text {
+    width: 130px;
+  }
+}
+
+.ant-dropdown {
+  .ant-dropdown-menu {
+    border-radius: 6px;
+    box-shadow: 0 0 5px 1px $cl_alto;
+  }
+}
+
+.ant-modal {
+  .ant-modal-content {
+    border-radius: 12px;
+
+    .ant-modal-header {
+      border-radius: 12px 12px 0 0;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../styles/variable.scss";
+
+.room {
+  height: $sp_header;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.35s ease 0s;
+  cursor: pointer;
+
+  &.selected {
+    background: $cl_gallery;
+  }
+
+  &:hover {
+    background: $cl_gallery;
+  }
+
+  .room__name {
+    color: $cl_mine-shaft;
+    font-weight: 600;
+  }
+
+  .room__text {
+    color: $cl_gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

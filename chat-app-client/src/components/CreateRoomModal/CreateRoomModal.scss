@@ -1,0 +1,28 @@
+@import "../../styles/variable.scss";
+
+.create-room-form {
+  &__err {
+    font-size: 14px;
+    color: $cl_sunset-orange;
+  }
+
+  .ant-form-item {
+    margin-bottom: 8px;
+
+    &:nth-child(2) {
+      margin-bottom: 0px;
+    }
+
+    .ant-input {
+      border: 1px solid $cl_alto !important;
+      border-radius: 3px;
+      box-shadow: none !important ;
+      transition: all 0.35s ease 0s;
+      margin-bottom: 4px;
+
+      &:focus {
+        border: 1px solid $cl_gray !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/variable.scss";
+
+.message-input {
+  width: 100%;
+  border: 1px solid $cl_alto;
+  border-radius: 22px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+
+  .ant-input {
+    border: none !important;
+    box-shadow: none !important;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+
+  .ant-upload-picture-card-wrapper {
+    width: auto;
+    margin: 0px 4px;
+
+    .ant-upload-list {
+      .ant-upload-list-picture-card-container {
+        display: none;
+      }
+    }
+
+    .ant-upload {
+      width: 24px;
+      height: 24px;
+      margin: 0px;
+
+      &.ant-upload-select-picture-card {
+        background: none;
+        border: none;
+      }
+    }
+  }
+
+  .ant-btn-link {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

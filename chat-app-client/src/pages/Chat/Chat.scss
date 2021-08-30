@@ -1,0 +1,85 @@
+@import "../../styles/variable.scss";
+@import "../../styles/common.scss";
+
+.chat {
+  height: 100vh;
+  display: flex;
+  background: $cl_alabaster;
+  padding: 20px 0px;
+
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
+
+  &-box {
+    height: 100%;
+    background: $cl_white;
+    border: 1px solid $cl_alto;
+    border-radius: 3px;
+    display: flex;
+
+    @media (max-width: 768px) {
+      border: none;
+      border-radius: 0px;
+    }
+
+    &__l-bar {
+      width: 350px;
+      border-right: 1px solid $cl_alto;
+
+      @media (max-width: 935px) {
+        width: 300px;
+      }
+
+      @media (max-width: 767.98px) {
+        width: 0px;
+        border: none;
+        overflow: hidden;
+
+        &.expand {
+          width: 100vw;
+        }
+      }
+
+      .l-header {
+        height: $sp_header;
+        border-bottom: 1px solid $cl_alto;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 767.98px) {
+          width: 100%;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+
+          &__avatar {
+            background: $cl_alabaster;
+            border: 1px solid $cl_gallery;
+          }
+
+          &__username {
+            margin: 0px 8px;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: lowercase;
+            cursor: default;
+          }
+        }
+      }
+    }
+
+    &__r-bar {
+      flex-grow: 1;
+
+      @media (max-width: 767.98px) {
+        width: 0px;
+        overflow: hidden;
+      }
+    }
+  }
+}

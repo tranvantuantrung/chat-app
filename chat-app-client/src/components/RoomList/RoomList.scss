@@ -1,0 +1,14 @@
+@import "../../styles/variable.scss";
+
+.room-list {
+  padding-top: 8px;
+  height: calc(100% - #{$sp_header});
+
+  &__box {
+    height: 100%;
+  }
+
+  .scroll-to-bottom__btn {
+    display: none;
+  }
+}

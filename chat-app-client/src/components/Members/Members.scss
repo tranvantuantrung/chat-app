@@ -1,0 +1,35 @@
+@import "../../styles/variable.scss";
+
+.members {
+  height: 100%;
+
+  .members__title {
+    font-size: 16px;
+    font-weight: 600;
+    height: $sp_header;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .members__box {
+    height: calc(100% - #{$sp_header});
+    padding: 0px 0px 0px 20px;
+
+    .members__item {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+
+      .members__username {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .scroll-to-bottom__btn {
+    display: none;
+  }
+}

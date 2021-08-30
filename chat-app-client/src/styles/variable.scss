@@ -1,0 +1,19 @@
+$cl_alabaster: #fafafa;
+$cl_alto: #dbdbdb;
+$cl_white: #ffffff;
+$cl_gallery: #efefef;
+$cl_sunset-orange: #ff4d4f;
+
+$cl_mine-shaft: #262626;
+$cl_gray: #8e8e8e;
+
+$sp_header: 56px;
+$sp_footer: 78px;
+
+%sp_auth-form {
+  width: 320px;
+
+  @media (max-width: 379.98px) {
+    width: 100%;
+  }
+}
