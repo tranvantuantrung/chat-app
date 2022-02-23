@@ -24,14 +24,14 @@ cd chat-app
 to start the server:
 
 ```bash
-cd realtime-chat-app-server
+cd chat-app-server
 yarn run dev
 ```
 
 to start the client:
 
 ```bash
-cd realtime-chat-app-client
+cd chat-app-client
 yarn start
 ```
 
