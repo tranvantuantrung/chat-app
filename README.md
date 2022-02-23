@@ -19,7 +19,7 @@ yarn install
 Move to the directory containing the repo:
 
 ```bash
-cd realtime-chat-app
+cd chat-app
 ```
 to start the server:
 
